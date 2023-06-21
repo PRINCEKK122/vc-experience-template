@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lexend Mega", sans-serif;
+    text-align: center;
+}
+
+/* Header styles */
+header h1 {
+    margin: 2rem 0;
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+header nav {
+    margin-bottom: 4rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul {
+    list-style: none;
+}
+
+header a {
+    color: #222;
+    font-size: 2rem;
+}
+
+header .banner {
+    height: 37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner h2 {
+    font-size: 3.5rem;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.banner p {
+    font-size: 2.5rem;
+    font-weight: 500;
+    background-color: #fff;
+    padding-bottom: 0.7rem;
+}
+
