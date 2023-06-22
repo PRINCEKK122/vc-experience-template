@@ -19,6 +19,7 @@ header h1 {
     font-size: 4.5rem;
     font-weight: 600;
     line-height: 1.4;
+    letter-spacing: -1px;
 }
 
 header nav {
@@ -47,19 +48,119 @@ header .banner {
     background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 }
 
-.banner h2 {
+.banner h2,
+#portfolio h2 {
     font-size: 3.5rem;
     padding: 1rem;
     background-color: #fff;
 }
 
-.banner p {
-    font-size: 2.5rem;
+.banner p,
+#portfolio p {
+    font-size: 2rem;
     font-weight: 500;
     background-color: #fff;
     padding-bottom: 0.7rem;
 }
 
+/* Portfolio Section */
+#portfolio {
+    margin-top: 5rem;
+}
+
+#portfolio .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#portfolio .image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container span {
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+#portfolio img {
+    width: 20rem;
+    height: auto;
+    padding: 0.5rem;
+}
+
+#portfolio > p {
+    margin-bottom: 1.2rem;
+}
+
+
+/* Team Section */
+#team {
+    margin: 7rem 0 4rem;
+}
+
+#team h2 {
+    margin: 0 0 1.5rem;
+    font-size: 3.5rem;
+}
+
+.employees-container {
+    background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-road.jpg");
+    background-position: top left;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.employee-details {
+    flex-basis: 25rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    line-height: 2;
+    padding: 1rem;
+}
+
+.employee-details img {
+    width: 100%;
+}
+
+.employee-details h4 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    letter-spacing: -1px;
+}
+
+.employee-details p {
+    font-size: 2rem;
+    font-weight: 00;
+    line-height: 1.2;
+}
+
+
+/* Footer section */
+footer h2 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: -2px;
+}
+
+footer p {
+    font-size: 2rem;
+}
+
+footer p + p {
+    margin-top: 1rem;
+}
+
+footer p:last-child {
+    margin-top: 7rem;
+    margin-bottom: 1.6rem;
+}
